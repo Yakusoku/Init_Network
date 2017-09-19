@@ -16,7 +16,7 @@
 
         // Create a new player, and pick a random colour for that player        
         //var inst = instance_create(64, 192, oPlayer);
-		var inst = instance_create_layer(64, 192, "Level_Instances", oPlayer);
+		var inst = instance_create_layer(64, 192, myLEVEL_INSTANCES, obj_Player);
 
         // put this instance into a map, using the socket ID as the lookup
         ds_map_add(clients, sock, inst);
@@ -26,10 +26,10 @@
 		
         // Create a disconnecting "PUFF" at the current coords
         //instance_create(inst.x, inst.y, oPuff);
-		instance_create_layer(inst.x, inst.y, "Level_Instances", oPuff);
+		instance_create_layer(inst.x, inst.y, myLEVEL_INSTANCES, obj_Puff);
 		
         // Delete the socket from out map, and kill the player instance
-        ds_map_delete(Clients, sock);
+        ds_map_delete(clients, sock);
 		
         with(inst) {
 			instance_destroy();

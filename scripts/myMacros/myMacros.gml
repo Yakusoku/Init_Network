@@ -6,3 +6,7 @@
 #macro myJUMP_KEY 2
 #macro myKEY_CMD 0
 #macro myNAME_CMD 1
+
+
+#macro myMENU_INSTANCES "Menu_Instances"
+#macro myLEVEL_INSTANCES "Level_Instances"

@@ -1,0 +1,2 @@
+/// @description Reset Game
+myResetGame();

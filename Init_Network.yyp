@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01d1c927-e232-4de0-80c2-f931106aa5d0",
+            "Value": {
+                "id": "13b73e52-0a5c-44f3-8532-8ed2d44b0553",
+                "resourcePath": "objects\\obj_Initialize\\obj_Initialize.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04518b12-4472-4cf3-b4be-f9e38be3ac69",
             "Value": {
                 "id": "14c93af1-6f1f-44a3-8395-9e4899a41006",
@@ -79,11 +87,27 @@
             }
         },
         {
+            "Key": "20dbc8c4-b5a2-4742-9bfc-aec3f2c8f1de",
+            "Value": {
+                "id": "0f4a47ba-7666-4c6e-90f5-d1914c9e443f",
+                "resourcePath": "scripts\\myStartOnlyClient\\myStartOnlyClient.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "23c809a6-5d03-45cb-9055-2cf5a5b799b5",
             "Value": {
                 "id": "aacf646d-4cff-4377-a4e1-1a40e1019597",
                 "resourcePath": "views\\23c809a6-5d03-45cb-9055-2cf5a5b799b5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "289b9d01-4ca3-4225-a400-05653c41796a",
+            "Value": {
+                "id": "03988d02-340e-475c-a122-f688ce75f167",
+                "resourcePath": "objects\\obj_Puff\\obj_Puff.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -138,7 +162,7 @@
             "Key": "35e483f3-d753-4f05-b9f5-5623c1364413",
             "Value": {
                 "id": "afb62528-2376-4f21-91c7-6076d8f596c4",
-                "resourcePath": "objects\\oTextBox\\oTextBox.yy",
+                "resourcePath": "objects\\obj_TextBox\\obj_TextBox.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -162,7 +186,7 @@
             "Key": "3cd73be4-6642-4691-8937-cb24a35d0db6",
             "Value": {
                 "id": "aab59719-39aa-4f44-b83c-4392c6f25808",
-                "resourcePath": "objects\\oCreateServerButton\\oCreateServerButton.yy",
+                "resourcePath": "objects\\obj_CreateServerButton\\obj_CreateServerButton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -180,6 +204,14 @@
                 "id": "4de4ceb5-14fc-4789-bd84-e8ee3eba0e26",
                 "resourcePath": "sprites\\sCreateServer_Highlight\\sCreateServer_Highlight.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4795dd0e-1643-4859-bf71-41b66893d7b1",
+            "Value": {
+                "id": "537481e5-5004-4eef-bab4-121e84852a5f",
+                "resourcePath": "views\\4795dd0e-1643-4859-bf71-41b66893d7b1.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -210,8 +242,16 @@
             "Key": "60be1fa9-371c-4461-a1f8-8da84899a829",
             "Value": {
                 "id": "69e3b8fc-f903-4e88-bd01-a05fb79b9095",
-                "resourcePath": "objects\\oMenu\\oMenu.yy",
+                "resourcePath": "objects\\obj_ServerList\\obj_ServerList.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "62b4558b-183c-4684-8b30-b516a0fecc31",
+            "Value": {
+                "id": "cbbe6a00-4a63-42a9-8dfd-2961aa828a0f",
+                "resourcePath": "scripts\\myStartGameServer\\myStartGameServer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -242,7 +282,7 @@
             "Key": "872e7122-3f69-4ece-9c5d-9bcd81750360",
             "Value": {
                 "id": "c4aac94d-edb5-4838-aaf3-cb8940235134",
-                "resourcePath": "objects\\oClient\\oClient.yy",
+                "resourcePath": "objects\\obj_Client\\obj_Client.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -306,7 +346,7 @@
             "Key": "b2ace2d1-6359-42f6-9801-ff7d1d68dda3",
             "Value": {
                 "id": "ba88c5b6-3a74-4982-a44b-6ee66d54b241",
-                "resourcePath": "objects\\oPlayer\\oPlayer.yy",
+                "resourcePath": "objects\\obj_Player\\obj_Player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -314,7 +354,7 @@
             "Key": "baaeec68-f8a5-4e61-b83b-b8b1dce25951",
             "Value": {
                 "id": "1dc28e47-0bd0-4658-9950-cd40b5cab56c",
-                "resourcePath": "objects\\oServer\\oServer.yy",
+                "resourcePath": "objects\\obj_Server\\obj_Server.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -421,16 +461,27 @@
                 "resourcePath": "scripts\\SendKeepAlive\\SendKeepAlive.yy",
                 "resourceType": "GMScript"
             }
+        },
+        {
+            "Key": "fefe9522-4731-4b2f-826a-6faecafe3812",
+            "Value": {
+                "id": "16557c96-3f4b-4883-81c2-ef4c961bd4b2",
+                "resourcePath": "scripts\\myInitializationGlobalVariables\\myInitializationGlobalVariables.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
         "096b1bc8-6b11-41ec-80a2-31bef1902779",
+        "fefe9522-4731-4b2f-826a-6faecafe3812",
+        "7761f931-26bd-4426-945e-857118ec5033",
         "04518b12-4472-4cf3-b4be-f9e38be3ac69",
         "298b9116-aa46-44b0-bc2a-823b28adf207",
         "c25d471a-ea19-4568-bcea-4864d81aae15",
         "842736db-7b71-42e9-9929-607eed493084",
         "fc869a83-cd0e-4b7f-b16a-6df58fd081b9",
-        "7761f931-26bd-4426-945e-857118ec5033"
+        "62b4558b-183c-4684-8b30-b516a0fecc31",
+        "20dbc8c4-b5a2-4742-9bfc-aec3f2c8f1de"
     ],
     "tutorial": ""
 }
