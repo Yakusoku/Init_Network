@@ -11,7 +11,7 @@ var count = ds_list_size(istServersList);
 for(var i = 0; i < count; i++) {
     draw_text(10, yindex, string_hash_to_newline(ds_list_find_value(istServersList, i) 
 	                                             + "  " 
-												 + ds_list_find_value(istServersList, i) 
+												 + ds_list_find_value(istServerNames, i) 
 												 + "'s server"));
     yindex += 30;
 }

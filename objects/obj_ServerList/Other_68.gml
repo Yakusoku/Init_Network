@@ -2,7 +2,7 @@
 
 var eventid = ds_map_find_value(async_load, "id");
 
-if (eventid == global.broadcast_server)
+if (eventid == istBroadcastServer)
 {
     var ip = ds_map_find_value(async_load, "ip");
 
@@ -14,7 +14,7 @@ if (eventid == global.broadcast_server)
     var index = ds_list_find_index(istServersList, ip);
     if(index < 0) {
         ds_list_add(istServersList, ip);
-        ds_list_add(global.servernames, name);
+        ds_list_add(istServerNames, name);
         show_debug_message("New server found at: " + ip + "   called: " + name);
     }    
 }

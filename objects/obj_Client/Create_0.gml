@@ -1,4 +1,5 @@
 /// @description Initialize the client
+
 clientx = 64;   // player start X and Y
 clienty = 192;
 PlayerName = global.ServerName;   // get the name that was selected (it's a server OR player name)
