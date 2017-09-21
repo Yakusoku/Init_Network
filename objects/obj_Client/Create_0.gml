@@ -8,7 +8,7 @@ PlayerName = global.ServerName;   // get the name that was selected (it's a serv
 buff = buffer_create(256, buffer_grow, 1);
 
 // Create a TCP/IP socket
-client = network_create_socket(global.ServerType);
+client = network_create_socket(network_socket_tcp);
 
 // remember this socket ID so the server can ignore it (if we have a local server)
 global.client = client;

@@ -3,9 +3,10 @@
 	var i = iServerName;
 	global.ServerName = i.Text;
 
-	global.Server = instance_create_layer(0, 0, myMENU_INSTANCES, obj_Server);
-
-	if (global.haveserver == false) {
+	//global.Server = instance_create_layer(0, 0, myMENU_INSTANCES, obj_Server);
+	var inst = instance_create_layer(0, 0, myMENU_INSTANCES, obj_Server);
+	
+	if (inst < 0) {
 	    show_debug_message("Cant create server");
 	} else {
 	    //global.glbGameServerIP = "127.0.0.1";
